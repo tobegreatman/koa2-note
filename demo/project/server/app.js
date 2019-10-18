@@ -19,6 +19,7 @@ const sessionMysqlConfig= {
   password: config.database.PASSWORD,
   database: config.database.DATABASE,
   host: config.database.HOST,
+  port: config.database.PORT // config中如果port不是3306，会导致登录被拒，port应映射过来
 }
 
 // 配置session中间件
